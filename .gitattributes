@@ -1,0 +1,15 @@
+# Normalize all text files
+* text=auto
+
+# Treat media assets as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.wav binary
+
+# Language stats
+*.py linguist-language=Python
+*.json linguist-language=JSON
+
+# Prevent diffs on binary assets
+assets/** diff=none merge=union
